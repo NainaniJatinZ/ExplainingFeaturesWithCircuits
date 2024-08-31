@@ -1,1 +1,5 @@
 # ExplainingFeaturesWithCircuits
+
+Summary: Explaining abstract SAE features with circuits 
+
+The problem tackled in this project involves understanding how abstract features within large language models (LLMs) are formed and activated, particularly focusing on feature 15191 in the 8th layer of the Gemma-2 2b model. My approach centered on investigating the circuits and attention mechanisms that contribute to the activation of this feature, which initially appeared to be a simple token-level indicator but was found to represent more complex behaviors related to the LHS of a general equation. Through a combination of residual stream patching and attention head output patching, I identified specific attention heads that play a crucial role in detecting operators and contributing to the feature’s activation. While these initial results are promising, further experiments are needed to fully map the circuit and confirm whether these findings generalize across different contexts and operators.
