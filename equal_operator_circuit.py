@@ -106,7 +106,7 @@ else:
 
 print(f"Device: {device}")
 
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] = "<hf token here>"
 model = HookedSAETransformer.from_pretrained("google/gemma-2-2b", device = device)
 
 # Attach the new method to the model instance

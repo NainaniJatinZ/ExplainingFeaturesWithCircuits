@@ -1,0 +1,8 @@
+Loading miniconda version 22.11.1-1
+WARNING:root:You tried to specify center_unembed=True for a model using logit softcap, but this can't be done! Softcapping is not invariant upon adding a constantSetting center_unembed=False instead.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 11.56it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 11.97it/s]
+WARNING:root:You are not using LayerNorm, so the writing weights can't be centered! Skipping
+Traceback (most recent call last):
+  File "/home/jnainani_umass_edu/ExplainingFeaturesWithCircuits/generic_equal_feature_patching.py", line 84, in <module>
+    attn_head_out_act_patch_results = f_utils.get_act_patch_attn_head_out_by_pos(model, corrupted_tokens, clean_cache, f_utils.equal_feature_metric)
+AttributeError: module 'f_utils' has no attribute 'equal_feature_metric'

@@ -1,0 +1,252 @@
+Device: cuda
+Loaded pretrained model google/gemma-2-2b into HookedTransformer
+Pair 1:
+  Clean:     What is the output of 95 plus 37 ? 
+  Corrupted: What is the output of Mz5 plus Zq7 ? 
+
+Pair 2:
+  Clean:     What is the output of 12 plus 37 ? 
+  Corrupted: What is the output of Yc1 plus Uv6 ? 
+
+Pair 3:
+  Clean:     What is the output of 96 plus 63 ? 
+  Corrupted: What is the output of Yk1 plus Jc9 ? 
+
+Pair 4:
+  Clean:     What is the output of 91 plus 22 ? 
+  Corrupted: What is the output of Kz8 plus Zf9 ? 
+
+Pair 5:
+  Clean:     What is the output of 27 plus 79 ? 
+  Corrupted: What is the output of Yj7 plus Dg2 ? 
+
+Pair 6:
+  Clean:     What is the output of 18 plus 68 ? 
+  Corrupted: What is the output of Fz3 plus Fd4 ? 
+
+Pair 7:
+  Clean:     What is the output of 54 plus 35 ? 
+  Corrupted: What is the output of Qv1 plus Nn4 ? 
+
+Pair 8:
+  Clean:     What is the output of 14 plus 95 ? 
+  Corrupted: What is the output of Nq5 plus Qj5 ? 
+
+Pair 9:
+  Clean:     What is the output of 89 plus 53 ? 
+  Corrupted: What is the output of Zp2 plus Jf8 ? 
+
+Pair 10:
+  Clean:     What is the output of 55 plus 98 ? 
+  Corrupted: What is the output of Lj4 plus Ym2 ? 
+
+Pair 11:
+  Clean:     What is the output of 24 plus 51 ? 
+  Corrupted: What is the output of Yd1 plus Vp9 ? 
+
+Pair 12:
+  Clean:     What is the output of 28 plus 90 ? 
+  Corrupted: What is the output of Kq9 plus Nq4 ? 
+
+Clean:  tensor(11.6386, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.5800, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(10.6945, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.2277, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.1947, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.6042, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.6062, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.2176, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.4056, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.3056, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.5175, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.1263, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.3426, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.4183, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.1550, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(12.4159, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.4401, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.6519, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.6722, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(12.4159, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(4.8851, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.4245, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.7031, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(10.9372, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.6665, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.2094, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.4790, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.1451, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.0995, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.4744, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.9320, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.9311, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.5067, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.9118, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.5310, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.2467, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.7735, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.6778, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.3061, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(4.9746, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.0407, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.8414, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.2544, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.5424, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.1945, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.5971, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.6068, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.0943, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.2357, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.4117, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.4013, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.2084, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.7734, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.5148, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.3562, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.5781, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.0325, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.1905, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.1318, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(4.9945, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(11.6411, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.3297, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(10.4646, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.8524, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.4819, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.2030, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.4967, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.0929, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.1214, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(12.6752, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(10.5657, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(11.1227, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.2100, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.5906, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.7289, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.3205, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.2210, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.4579, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.3882, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.7993, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.0606, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.9935, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.5623, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.2781, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(11.1852, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.0017, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.2899, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(7.4114, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.0138, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.6887, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(11.8978, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.6776, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.5541, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.2861, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(8.3886, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(10.7119, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.4627, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(5.8219, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(6.7855, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+Clean:  tensor(9.9903, device='cuda:0')
+Corrupted:  tensor(0., device='cuda:0')
+[]
+tuples []

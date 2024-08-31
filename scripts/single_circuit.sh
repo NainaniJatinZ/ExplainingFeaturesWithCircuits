@@ -9,4 +9,5 @@
 #SBATCH --constraint=a100  # Constraint to use A100 GPU
 
 module load miniconda/22.11.1-1
+conda activate finetuning
 python generic_equal_feature_patching.py --example_number 0

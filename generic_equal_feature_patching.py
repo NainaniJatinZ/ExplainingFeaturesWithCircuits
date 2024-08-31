@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Standard imports
 import os
 import torch
@@ -13,7 +14,6 @@ import transformer_lens
 import transformer_lens.utils as utils
 from transformer_lens.ActivationCache import ActivationCache
 from transformer_lens.HookedTransformer import HookedTransformer
-from __future__ import annotations
 import itertools
 from functools import partial
 from typing import Callable, Optional, Sequence, Tuple, Union, overload
@@ -24,6 +24,7 @@ from jaxtyping import Float, Int
 from tqdm.auto import tqdm
 from typing_extensions import Literal
 import types
+import json
 from transformer_lens.utils import Slice, SliceInput
 import functools
 from neel_plotly import line, imshow, scatter
@@ -36,6 +37,7 @@ parser.add_argument("--example_number", type=int, required=True, help="The examp
 args = parser.parse_args()
 example_number = args.example_number
 
+print(f"Started script with {type(example_number)}: {example_number}")
 
 torch.set_grad_enabled(False)
 if torch.backends.mps.is_available():
@@ -44,7 +46,7 @@ else:
     device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Device: {device}")
 
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] = "<hf token here>"
 model = HookedSAETransformer.from_pretrained("google/gemma-2-2b", device = device)
 
 # Attach the new method to the model instance
@@ -59,7 +61,7 @@ sae, cfg_dict, sparsity = SAE.from_pretrained(
 # Example usage
 N = 100  # Number of pairs to generate
 dataset = f_utils.generate_dataset(N, example_number)
-
+print("First pair", dataset[0])
 clean_pr = []
 corr_pr = []
 for i, (clean, corrupted) in enumerate(dataset):
@@ -70,6 +72,13 @@ clean_tokens = model.to_tokens(clean_pr)
 corrupted_tokens = model.to_tokens(corr_pr)
 
 _, clean_cache = model.run_with_cache(clean_tokens)
+
+def equal_feature_metric(cache):
+    sae_in = cache[sae.cfg.hook_name]
+    feature_acts = sae.encode(sae_in)
+    # print(feature_acts.shape)
+    feature_acts = feature_acts.squeeze()
+    return feature_acts[:, :, 15191][-2:].sum()
 
 DO_SLOW_RUNS = True
 ALL_HEAD_LABELS = [f"L{i}H{j}" for i in range(model.cfg.n_layers) for j in range(model.cfg.n_heads)]
@@ -84,7 +93,8 @@ if DO_SLOW_RUNS:
         title="attn_head_out Activation Patching By Pos", 
         return_fig=True)
     fig.write_image(f"results/example{example_number}/attn_head_out_act_patch_results.png")
-    
+
+print('Slow run completed')
     
 # Assuming attn_head_out_act_patch_results is your tensor
 sliced_results = attn_head_out_act_patch_results[:72, :]
@@ -113,9 +123,9 @@ fig.update_layout(
 )
 
 # Save the figure
-fig.write_image(f"results/example{example_number}/attn_head_out_act_patch_results_sliced.png")
+fig.write_image(f"results/example{example_number}_1/attn_head_out_act_patch_results_sliced.png")
 
-
+print('Sliced results completed')
 # Assuming sliced_results is your sliced tensor
 mean_value = sliced_results.mean().item()
 std_dev = sliced_results.std().item()
@@ -134,12 +144,12 @@ tuples_list = [
     for y_idx, x_idx in zip(y_indices, x_indices)
 ]
 
-
 # Convert the first element of each tuple in the list
-converted_tuples = [convert_to_tuple(item[0]) for item in tuples_list] #[(convert_to_tuple(item[0]), item[1], item[2]) for item in tuples_list]
+converted_tuples = [f_utils.convert_to_tuple(item[0]) for item in tuples_list] #[(convert_to_tuple(item[0]), item[1], item[2]) for item in tuples_list]
 
 output_path = f"results/example{example_number}/converted_tuples.json"
 with open(output_path, 'w') as f:
     json.dump(converted_tuples, f)
 
-f_utils.save_relevant_attention_patterns(clean_cache, converted_tuples)
+f_utils.save_relevant_attention_patterns(clean_cache, converted_tuples, example_number, model.to_str_tokens(clean_tokens[0]))
+print('Completed script')
